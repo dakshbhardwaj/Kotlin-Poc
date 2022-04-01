@@ -10,19 +10,28 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+
        val calculateAgeButton = findViewById<Button>(R.id.btnCalculateAge)
+        val playTicTacToeButton = findViewById<Button>(R.id.btnPlayTicTacToe)
+        var toDobutton = findViewById<Button>(R.id.btnToDo);
+
 
         calculateAgeButton.setOnClickListener{
             val intent = Intent(this, CalculateAge::class.java)
             startActivity(intent)
         }
 
-        val playTicTacToeButton = findViewById<Button>(R.id.btnPlayTicTacToe)
-
         playTicTacToeButton.setOnClickListener{
             val intent = Intent(this, TicTacToe::class.java)
             startActivity(intent)
         }
+
+        toDobutton.setOnClickListener{
+            val intent = Intent(this, ToDo::class.java)
+            startActivity(intent)
+        }
+
+
 
     }
 
