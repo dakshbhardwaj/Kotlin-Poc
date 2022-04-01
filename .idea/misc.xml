@@ -3,7 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="../../Library/Android/sdk/platforms/android-31/data/res/layout/simple_list_item_multiple_choice.xml" value="0.4244791666666667" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_todo.xml" value="0.4244791666666667" />
         <entry key="app/src/main/res/layout/calculate_age.xml" value="0.4244791666666667" />
       </map>
     </option>
