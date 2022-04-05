@@ -40,6 +40,10 @@
         <activity
             android:name=".Weather"
             android:exported="true" />
-    </application>
+
+        <activity
+            android:name=".Calculator"
+            android:exported="true"/>
+       </application>
 
 </manifest>
