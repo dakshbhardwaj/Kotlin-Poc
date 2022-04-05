@@ -11,26 +11,31 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
-       val calculateAgeButton = findViewById<Button>(R.id.btnCalculateAge)
+        val calculateAgeButton = findViewById<Button>(R.id.btnCalculateAge)
         val playTicTacToeButton = findViewById<Button>(R.id.btnPlayTicTacToe)
-        var toDobutton = findViewById<Button>(R.id.btnToDo);
+        val toDoButton = findViewById<Button>(R.id.btnToDo);
+        val weatherButton = findViewById<Button>(R.id.btnWeather);
 
 
-        calculateAgeButton.setOnClickListener{
+        calculateAgeButton.setOnClickListener {
             val intent = Intent(this, CalculateAge::class.java)
             startActivity(intent)
         }
 
-        playTicTacToeButton.setOnClickListener{
+        playTicTacToeButton.setOnClickListener {
             val intent = Intent(this, TicTacToe::class.java)
             startActivity(intent)
         }
 
-        toDobutton.setOnClickListener{
+        toDoButton.setOnClickListener {
             val intent = Intent(this, ToDo::class.java)
             startActivity(intent)
         }
 
+        weatherButton.setOnClickListener {
+            val intent = Intent(this, Weather::class.java)
+            startActivity(intent)
+        }
 
 
     }
