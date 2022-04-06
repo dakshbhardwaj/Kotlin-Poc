@@ -67,7 +67,7 @@ class Calculator : AppCompatActivity() {
 
     fun OnOperationButtonPress(view: View) {
         if (isFirstNumber) {
-            Toast.makeText(this, "Enter a number before operation", Toast.LENGTH_LONG)
+            Toast.makeText(this, "Enter a number before operation", Toast.LENGTH_LONG).show()
         } else {
             val editText = findViewById<EditText>(R.id.etNumberText)
             val selectedBtn = view as Button
@@ -90,7 +90,7 @@ class Calculator : AppCompatActivity() {
         }
     }
 
-    fun OnEqualsPress() {
+    fun OnEqualsPress(view: View) {
         val editText = findViewById<EditText>(R.id.etNumberText)
         val secondVal: String = editText.text.toString()
         var res: Double = "0".toDouble()
@@ -108,13 +108,13 @@ class Calculator : AppCompatActivity() {
         currVal = res.toString()
     }
 
-    fun onClearPress() {
+    fun onClearPress(view: View) {
         val editText = findViewById<EditText>(R.id.etNumberText)
         editText.setText("0")
         isFirstNumber = true
     }
 
-    fun onPercentPress() {
+    fun onPercentPress(view: View) {
         val editText = findViewById<EditText>(R.id.etNumberText)
         editText.setText((editText.text.toString().toDouble() / 100).toString())
 
