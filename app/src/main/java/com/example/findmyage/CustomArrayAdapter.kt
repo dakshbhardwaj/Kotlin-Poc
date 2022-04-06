@@ -5,10 +5,11 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.TextView
+import com.example.findmyage.models.ListData
 import com.makeramen.roundedimageview.RoundedImageView
 
-class CustomArrayAdapter(private val activity: Activity, private val list:List<OurData>) :
-    ArrayAdapter<OurData>(activity, R.layout.list_item) {
+class CustomArrayAdapter(private val activity: Activity, private val list:List<ListData>) :
+    ArrayAdapter<ListData>(activity, R.layout.list_item) {
 
     override fun getCount(): Int {
         return list.size

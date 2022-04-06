@@ -3,6 +3,7 @@ package com.example.findmyage
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ListView
+import com.example.findmyage.models.ListData
 
 class ListView : AppCompatActivity() {
 
@@ -10,24 +11,24 @@ class ListView : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.list_view)
 
-        val list = mutableListOf<OurData>()
+        val list = mutableListOf<ListData>()
 
-        list.add(OurData(R.drawable.kohli, "Kohli", "Best Batsman"))
-        list.add(OurData(R.drawable.dhawan, "Shikhar Dhawan", "Indain Opener"))
-        list.add(OurData(R.drawable.bairstow, "Bairstow", "Opener Batsman"))
-        list.add(OurData(R.drawable.mahi, "Mahendra Singh Dhoni", "Former Indian Caption"))
-        list.add(OurData(R.drawable.dhawan, "Bales", "Bales"))
-        list.add(OurData(R.drawable.kohli, "Hardik", "All Rounder"))
-        list.add(OurData(R.drawable.mahi, "Indain Team", "Men in Blue"))
-        list.add(OurData(R.drawable.bairstow, "Amla", "Best Batsman of SA"))
-        list.add(OurData(R.drawable.kohli, "Kohli", "Best Batsman"))
-        list.add(OurData(R.drawable.dhawan, "Shikhar Dhawan", "Indain Opener"))
-        list.add(OurData(R.drawable.bairstow, "Bairstow", "Opener Batsman"))
-        list.add(OurData(R.drawable.mahi, "Mahendra Singh Dhoni", "Former Indian Caption"))
-        list.add(OurData(R.drawable.dhawan, "Bales", "Bales"))
-        list.add(OurData(R.drawable.kohli, "Hardik", "All Rounder"))
-        list.add(OurData(R.drawable.mahi, "Indain Team", "Men in Blue"))
-        list.add(OurData(R.drawable.bairstow, "Amla", "Best Batsman of SA"))
+        list.add(ListData(R.drawable.kohli, "Kohli", "Best Batsman"))
+        list.add(ListData(R.drawable.dhawan, "Shikhar Dhawan", "Indain Opener"))
+        list.add(ListData(R.drawable.bairstow, "Bairstow", "Opener Batsman"))
+        list.add(ListData(R.drawable.mahi, "Mahendra Singh Dhoni", "Former Indian Caption"))
+        list.add(ListData(R.drawable.dhawan, "Bales", "Bales"))
+        list.add(ListData(R.drawable.kohli, "Hardik", "All Rounder"))
+        list.add(ListData(R.drawable.mahi, "Indain Team", "Men in Blue"))
+        list.add(ListData(R.drawable.bairstow, "Amla", "Best Batsman of SA"))
+        list.add(ListData(R.drawable.kohli, "Kohli", "Best Batsman"))
+        list.add(ListData(R.drawable.dhawan, "Shikhar Dhawan", "Indain Opener"))
+        list.add(ListData(R.drawable.bairstow, "Bairstow", "Opener Batsman"))
+        list.add(ListData(R.drawable.mahi, "Mahendra Singh Dhoni", "Former Indian Caption"))
+        list.add(ListData(R.drawable.dhawan, "Bales", "Bales"))
+        list.add(ListData(R.drawable.kohli, "Hardik", "All Rounder"))
+        list.add(ListData(R.drawable.mahi, "Indain Team", "Men in Blue"))
+        list.add(ListData(R.drawable.bairstow, "Amla", "Best Batsman of SA"))
 
 
 

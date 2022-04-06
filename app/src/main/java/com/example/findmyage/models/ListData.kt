@@ -1,6 +1,6 @@
-package com.example.findmyage
+package com.example.findmyage.models
 
-class OurData (
+class ListData (
     val images:Int,
     val title:String,
     val desc:String
