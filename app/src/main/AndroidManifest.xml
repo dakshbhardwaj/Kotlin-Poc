@@ -44,6 +44,13 @@
         <activity
             android:name=".Calculator"
             android:exported="true"/>
-       </application>
+        <activity
+            android:name=".Pagination"
+            android:exported="true"/>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
 
 </manifest>
