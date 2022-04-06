@@ -24,10 +24,12 @@
         <entry key="app/src/main/res/layout/activity_todo.xml" value="0.4244791666666667" />
         <entry key="app/src/main/res/layout/activity_weather.xml" value="0.23229166666666667" />
         <entry key="app/src/main/res/layout/calculate_age.xml" value="0.4244791666666667" />
-        <entry key="app/src/main/res/layout/custom_progress.xml" value="0.4244791666666667" />
-        <entry key="app/src/main/res/menu/menu_main.xml" value="0.23229166666666667" />
         <entry key="app/src/main/res/layout/calculator.xml" value="0.2903884887695314" />
+        <entry key="app/src/main/res/layout/custom_progress.xml" value="0.4244791666666667" />
+        <entry key="app/src/main/res/layout/list_item.xml" value="0.23229166666666667" />
+        <entry key="app/src/main/res/layout/list_view.xml" value="0.4244791666666667" />
         <entry key="app/src/main/res/layout/tic_tac_toe.xml" value="0.1" />
+        <entry key="app/src/main/res/menu/menu_main.xml" value="0.23229166666666667" />
       </map>
     </option>
   </component>
