@@ -16,6 +16,7 @@ class MainActivity : AppCompatActivity() {
         val toDoButton = findViewById<Button>(R.id.btnToDo)
         val weatherButton = findViewById<Button>(R.id.btnWeather)
         var calculatorButton = findViewById<Button>(R.id.btnCalculator)
+        val listViewButton = findViewById<Button>(R.id.btnListView)
 
         calculateAgeButton.setOnClickListener {
             val intent = Intent(this, CalculateAge::class.java)
@@ -38,6 +39,10 @@ class MainActivity : AppCompatActivity() {
         }
         calculatorButton.setOnClickListener{
             val intent = Intent(this, Calculator::class.java)
+            startActivity(intent)
+        }
+        listViewButton.setOnClickListener{
+            val intent = Intent(this, ListView::class.java)
             startActivity(intent)
         }
 

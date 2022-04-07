@@ -44,6 +44,10 @@
         <activity
             android:name=".Calculator"
             android:exported="true"/>
+
+        <activity
+            android:name=".ListView"
+            android:exported="true"/>
        </application>
 
 </manifest>
