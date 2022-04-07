@@ -9,42 +9,50 @@
     tools:context=".MainActivity">
 
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:text="Select Any Application to proceed" />
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/textView"
         android:layout_marginTop="20dp"
+        android:gravity="center"
         android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Select Any Application to proceed" />
 
         <Button
             android:id="@+id/btnCalculateAge"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#65898D"
             android:text="Age Calculator" />
 
         <Button
             android:id="@+id/btnPlayTicTacToe"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#65898D"
             android:text="TIC-TAC-TOE" />
 
         <Button
             android:id="@+id/btnToDo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#65898D"
             android:text="ToDo" />
 
         <Button
             android:id="@+id/btnWeather"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#65898D"
             android:text="Weather" />
 
 
@@ -52,6 +60,8 @@
             android:id="@+id/btnCalculator"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#65898D"
             android:text="Calculator" />
     </LinearLayout>
 
