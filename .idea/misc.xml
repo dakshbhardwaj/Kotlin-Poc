@@ -4,11 +4,22 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="../../Library/Android/sdk/platforms/android-31/data/res/drawable/btn_default.xml" value="0.1605" />
+        <entry key="app/src/main/res/drawable/note_card_background.xml" value="0.2275" />
+        <entry key="app/src/main/res/drawable/note_card_bgd.xml" value="0.2275" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.27507692307692305" />
+        <entry key="app/src/main/res/layout/activity_todo.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_weather.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/add_note.xml" value="0.1" />
         <entry key="app/src/main/res/layout/calculate_age.xml" value="0.16032608695652173" />
         <entry key="app/src/main/res/layout/calculator.xml" value="0.20087585449218748" />
+        <entry key="app/src/main/res/layout/fragment_first.xml" value="0.10118130457113508" />
+        <entry key="app/src/main/res/layout/fragment_second.xml" value="0.10464817668207499" />
+        <entry key="app/src/main/res/layout/note_card.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/notes.xml" value="0.1" />
         <entry key="app/src/main/res/layout/tic_tac_toe.xml" value="0.1" />
-        <entry key="app/src/main/res/menu/menu_main.xml" value="0.23229166666666667" />
+        <entry key="app/src/main/res/menu/menu_main.xml" value="0.15375" />
+        <entry key="app/src/main/res/menu/notes_app_menu.xml" value="0.1" />
+        <entry key="app/src/main/res/menu/weather_app_menu.xml" value="0.1" />
       </map>
     </option>
   </component>

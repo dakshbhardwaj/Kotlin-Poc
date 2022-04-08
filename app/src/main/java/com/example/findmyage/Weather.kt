@@ -34,6 +34,7 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import java.text.SimpleDateFormat
 import java.util.*
+import kotlin.math.roundToInt
 
 
 class Weather : AppCompatActivity() {
@@ -205,15 +206,16 @@ class Weather : AppCompatActivity() {
             findViewById<TextView>(R.id.tv_main_description).text =
                 weatherList.weather[i].description;
             findViewById<TextView>(R.id.tv_temp).text =
-                weatherList.main.temp.toString() + getUnit(application.resources.configuration.toString())
+                (weatherList.main.temp - 273.15).roundToInt()
+                    .toString() + getUnit(application.resources.configuration.toString())
             findViewById<TextView>(R.id.tv_sunrise_time).text = unixTime(weatherList.sys.sunrise)
             findViewById<TextView>(R.id.tv_sunset_time).text = unixTime(weatherList.sys.sunset)
             findViewById<TextView>(R.id.tv_humidity).text =
-                weatherList.main.humidity.toString() + "per cent"
+                weatherList.main.humidity.toString() + " percent"
             findViewById<TextView>(R.id.tv_min).text =
-                weatherList.main.temp_min.toString() + " min";
+                (weatherList.main.temp_min - 273.15).roundToInt().toString() + " min";
             findViewById<TextView>(R.id.tv_max).text =
-                weatherList.main.temp_max.toString() + " max";
+                (weatherList.main.temp_max - 273.15).roundToInt().toString() + " max";
             findViewById<TextView>(R.id.tv_speed).text = weatherList.wind.speed.toString();
             findViewById<TextView>(R.id.tv_name).text = weatherList.name
             findViewById<TextView>(R.id.tv_country).text = weatherList.sys.country
@@ -237,7 +239,7 @@ class Weather : AppCompatActivity() {
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater.inflate(R.menu.menu_main, menu)
+        menuInflater.inflate(R.menu.weather_app_menu, menu)
         return super.onCreateOptionsMenu(menu)
     }
 

@@ -26,11 +26,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".CalculateAge"
             android:exported="true" />
-
         <activity
             android:name=".TicTacToe"
             android:exported="true" />
@@ -40,14 +38,18 @@
         <activity
             android:name=".Weather"
             android:exported="true" />
-
         <activity
             android:name=".Calculator"
             android:exported="true"/>
-
         <activity
             android:name=".ListView"
             android:exported="true"/>
+        <activity
+            android:name=".Notes"
+            android:exported="true" />
+        <activity
+            android:name=".AddNote"
+            android:exported="true" />
        </application>
 
 </manifest>
